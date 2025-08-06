@@ -42,6 +42,7 @@ This project builds a machine learning model to predict whether a delivery will 
 	6.	Scale Numeric Features
 
 **🤖 Modeling**
+
 	1.	Baseline Modeling
 (Logistic Regression, SVM, Decision Tree, Random Forest, KNN, XGBoost)
 	2.	Evaluation from Baseline Models
