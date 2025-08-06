@@ -43,8 +43,7 @@ This project builds a machine learning model to predict whether a delivery will 
 
 **🤖 Modeling**
 
-	1.	Baseline Modeling
-(Logistic Regression, SVM, Decision Tree, Random Forest, KNN, XGBoost)
+	1.	Baseline Modeling(Logistic Regression, SVM, Decision Tree, Random Forest, KNN, XGBoost)
 	2.	Evaluation from Baseline Models
 	3.	Hyperparameter Tuning All the Models
 	4.	Evaluation after Hyperparameter Tuning
