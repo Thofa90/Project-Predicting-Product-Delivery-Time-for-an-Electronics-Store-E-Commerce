@@ -105,7 +105,7 @@ Late deliveries lead to customer dissatisfaction and increased logistics cost. B
 	•	Multivariate patterns (e.g., light products + ship + high discount) are more predictive than individual features.
 	•	EDA suggests that discount strategy and logistics optimization can significantly reduce delays.
 
-**🧹 Data Preprocessing Steps before Modeling**
+**🧹 7. Data Preprocessing Steps before Modeling**
 
 The following preprocessing steps were applied to prepare the data for machine learning:
 
@@ -115,3 +115,62 @@ The following preprocessing steps were applied to prepare the data for machine l
 	4.	Categorical Encoding: Used Label Encoding to convert categorical variables (Warehouse_block, Mode_of_Shipment, Product_importance, Gender) into numeric form.
 	5.	Train-Test Split: Split the dataset into training and testing sets using a standard 80-20 ratio for model evaluation.
 	6.	Feature Scaling: Applied StandardScaler to normalize all numeric features and bring them to the same scale for consistent model performance.
+
+**8. Modeling & Evaluation**
+
+I have trained multiple models:
+
+- Logistic Regression
+- Bagged models (Decision Tree, Random Forest)
+- K‑Nearest Neighbors
+- Support Vector Machine (SVM)
+- XGBoost
+
+Metrics evaluated:
+
+- Accuracy
+- Precision
+- Recall (focus on catching delayed shipments)
+- F1‑Score
+- ROC‑AUC
+
+Primary success criteria:
+
+- High **recall** for delayed deliveries
+- Balanced **F1‑score**
+
+**9. Results & Interpretation**
+
+| Model               | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|--------------------|----------|-----------|--------|----------|---------|
+| Logistic Regression | 0.63     | 0.67      | 0.74   | 0.70     | 0.72    |
+| SVM                 | 0.66     | 0.83      | 0.54   | 0.65     | 0.73    |
+| Decision Tree       | 0.68     | 0.97      | 0.48   | 0.64     | 0.74    |
+| Random Forest       | 0.66     | 0.78      | 0.60   | 0.68     | 0.74    |
+| KNN                 | 0.63     | 0.71      | 0.65   | 0.68     | 0.72    |
+| **XGBoost (best)**  | 0.66     | 0.72      | **0.71**| **0.71**   | **0.75** |
+
+XGBoost was the best model, balancing recall and F1‑score while achieving top ROC‑AUC.
+
+**10. Feature Importance Insights**
+
+📌 1. XGBoost Feature Importance
+
+	•	Discount_offered is the most influential feature, contributing over 80% to the model’s decision-making.
+	•	Prior_purchases and Weight_in_gms have a moderate influence.
+	•	Features like Gender, Customer_rating, Mode_of_Shipment, and Warehouse_block have minimal impact.
+	•	Importance is calculated based on gain, reflecting how much a feature improves split quality.
+
+📌 2. Logistic Regression Coefficients
+
+	•	Positive coefficients (e.g., Discount_offered) increase the likelihood of delay.
+	•	Negative coefficients (e.g., Weight_in_gms, Prior_purchases) reduce the delay probability.
+	•	Coefficient magnitude shows influence, helping to interpret linear feature impact.
+
+**11. Usage Instructions**
+
+Clone the repository:
+```bash
+git clone https://github.com/username/repo.git
+cd repo
+pip install -r requirements.txt
