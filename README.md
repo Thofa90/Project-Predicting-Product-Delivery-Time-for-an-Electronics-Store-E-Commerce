@@ -57,28 +57,28 @@ Late deliveries lead to customer dissatisfaction and increased logistics cost. B
 
 **5. Dataset Overview**
 
-- ~11,000 transactions from an e-commerce electronics store
-- Columns include:
+- **~11,000 transactions** from an e-commerce electronics store
+- **Columns include:**
   - `Warehouse_block`, `Mode_of_Shipment`, `Customer_care_calls`,
   - `Customer_rating`, `Cost_of_the_Product`, `Discount_offered`,
     `Weight_in_gms`, `Prior_purchase`,`product_Importance`,` Gender`,` Reached.on.Time_Y.N(target: 0 = on time, 1 = delayed)`
-- Libraries Used:
+- **Libraries Used:**
  
-	1. Data Manipulation
+	**1. Data Manipulation**
 	   
 	import pandas as pd, import numpy as np
 	
-	2. Visualization
+	**2. Visualization**
 	   
 	import matplotlib.pyplot as plt, import seaborn as sns
 	
-	3. Preprocessing
+	**3. Preprocessing**
 	   
 	from sklearn.preprocessing import LabelEncoder, StandardScaler
 	
 	from sklearn.model_selection import train_test_split
 	
-	4.  Models
+	**4.  Models**
 	   
 	from sklearn.linear_model import LogisticRegression
 	
@@ -92,7 +92,7 @@ Late deliveries lead to customer dissatisfaction and increased logistics cost. B
 	
 	from xgboost import XGBClassifier
 	
-	5.  Evaluation
+	**5.  Evaluation**
 	   
 	from sklearn.metrics import (accuracy_score, precision_score, recall_score, f1_score, classification_report, confusion_matrix, roc_auc_score, roc_curve )
 
