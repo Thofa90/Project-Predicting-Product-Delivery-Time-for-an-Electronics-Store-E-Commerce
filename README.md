@@ -15,11 +15,12 @@ This project builds a machine learning model to predict whether a delivery will 
 
 **3. Table of Contents**
 
-🏢 Industry Overview & Business Context
+**🏢 Industry Overview & Business Context**
 
-📂 Data Loading & Goal of the Project
+**📂 Data Loading & Goal of the Project**
 
-🔍 Exploratory Data Analysis
+**🔍 Exploratory Data Analysis**
+
 	1.	Basic Information & Summary
 	2.	Check for Missing & Duplicates
 	3.	Target Variable Distribution
@@ -31,7 +32,8 @@ This project builds a machine learning model to predict whether a delivery will 
 	9.	Multivariate Analysis
 	10.	Correlation Heatmap with Numerical and Encoded Categorical Columns
 
-🧹 Data Preprocessing for Modeling
+**🧹 Data Preprocessing for Modeling**
+
 	1.	Drop Unnecessary Column
 	2.	Capping the Outliers
 	3.	Handling Skewness of Numerical Columns
@@ -39,15 +41,15 @@ This project builds a machine learning model to predict whether a delivery will 
 	5.	Train-test Split
 	6.	Scale Numeric Features
 
-🤖 Modeling
-	•	Baseline Modeling
+**🤖 Modeling**
+	1.	Baseline Modeling
 (Logistic Regression, SVM, Decision Tree, Random Forest, KNN, XGBoost)
-	•	Evaluation from Baseline Models
-	•	Hyperparameter Tuning All the Models
-	•	Evaluation after Hyperparameter Tuning
-	•	Feature Importance on Best Tuned Model
+	2.	Evaluation from Baseline Models
+	3.	Hyperparameter Tuning All the Models
+	4.	Evaluation after Hyperparameter Tuning
+	5.	Feature Importance on Best Tuned Model
 
-✅ Conclusion
+**✅ Conclusion**
 
 **4. Motivation / Problem Statement**
 
@@ -59,4 +61,4 @@ Late deliveries lead to customer dissatisfaction and increased logistics cost. B
 - Columns include:
   - `Warehouse_block`, `Mode_of_Shipment`, `Customer_care_calls`,
   - `Customer_rating`, `Cost_of_the_Product`, `Discount_offered`,
-    `Weight_in_gms`, `Prior_purchase`,`product_Importance`,` Gender`,` Reached.on.Time_Y.N` (target: 0 = on time, 1 = delayed)
+    `Weight_in_gms`, `Prior_purchase`,`product_Importance`,` Gender`,` Reached.on.Time_Y.N(target: 0 = on time, 1 = delayed)`
