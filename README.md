@@ -105,3 +105,13 @@ Late deliveries lead to customer dissatisfaction and increased logistics cost. B
 	•	Multivariate patterns (e.g., light products + ship + high discount) are more predictive than individual features.
 	•	EDA suggests that discount strategy and logistics optimization can significantly reduce delays.
 
+**🧹 Data Preprocessing Steps before Modeling**
+
+The following preprocessing steps were applied to prepare the data for machine learning:
+
+	1.	Dropped Unnecessary Columns: Removed columns like ID that don’t contribute to prediction.
+	2.	Outlier Capping: Applied IQR method to cap extreme values in numerical features (e.g., prior purchases, weight, discount).
+	3.	Skewness Handling: Applied log transformation to highly skewed columns like Discount_offered and Prior_purchases.
+	4.	Categorical Encoding: Used Label Encoding to convert categorical variables (Warehouse_block, Mode_of_Shipment, Product_importance, Gender) into numeric form.
+	5.	Train-Test Split: Split the dataset into training and testing sets using a standard 80-20 ratio for model evaluation.
+	6.	Feature Scaling: Applied StandardScaler to normalize all numeric features and bring them to the same scale for consistent model performance.
