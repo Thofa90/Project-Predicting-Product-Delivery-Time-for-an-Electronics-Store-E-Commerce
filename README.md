@@ -62,6 +62,33 @@ Late deliveries lead to customer dissatisfaction and increased logistics cost. B
   - `Warehouse_block`, `Mode_of_Shipment`, `Customer_care_calls`,
   - `Customer_rating`, `Cost_of_the_Product`, `Discount_offered`,
     `Weight_in_gms`, `Prior_purchase`,`product_Importance`,` Gender`,` Reached.on.Time_Y.N(target: 0 = on time, 1 = delayed)`
+- Libraries Used:
+ 
+# Data Manipulation
+import pandas as pd
+import numpy as np
+
+# Visualization
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Preprocessing
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.model_selection import train_test_split
+
+# Models
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from xgboost import XGBClassifier
+
+# Evaluation
+from sklearn.metrics import (
+    accuracy_score, precision_score, recall_score, f1_score,
+    classification_report, confusion_matrix, roc_auc_score, roc_curve
+)
 
 **6. Exploratory Data Analysis Summary (EDA)**
 
