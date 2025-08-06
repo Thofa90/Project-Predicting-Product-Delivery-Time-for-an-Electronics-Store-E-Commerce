@@ -166,35 +166,33 @@ XGBoost was the best model, balancing recall and F1‑score while achieving top 
 	•	Positive coefficients (e.g., Discount_offered) increase the likelihood of delay.
 	•	Negative coefficients (e.g., Weight_in_gms, Prior_purchases) reduce the delay probability.
 	•	Coefficient magnitude shows influence, helping to interpret linear feature impact.
-
-**11. Usage Instructions**
-
-Clone the repository:
-```bash
-git clone https://github.com/username/repo.git
-cd repo
-pip install -r requirements.txt
-
-open the notebook:
-
-Project_Predict_Delivery_Time.ipynb
-
-**12. Future Work**
+ 
+**🔮 11. Future Work**
 
 To enhance this project further, the following steps are planned or recommended:
 
 	•	📈 Hyperparameter Tuning with Cross-Validation: Extend tuning with cross-validation to improve model generalizability and reduce overfitting.
-
+ 
 	•	📊 Advanced Feature Engineering: Create new features such as relative discount percentage, delivery distance (if available), or customer segmentation for better insights.
-
+ 
 	•	🧠 Ensemble Models: Explore model stacking or blending to combine strengths of different classifiers for better performance.
-
+ 
 	•	📍 Geo/Time-based Features: If location or timestamp data is available, incorporate it to uncover delivery trends by region or time.
-
+ 
 	•	⚖️ Class Imbalance Handling: Use techniques like SMOTE or class weighting to address the imbalanced delivery status labels.
-
+ 
 	•	📦 Business Integration: Collaborate with logistics teams to translate model predictions into actionable steps (e.g., flagging at-risk shipments).
-
+ 
 	•	📂 Deployment: Deploy the model via a simple web interface or API to predict delivery delays in real-time.
 
 These enhancements can improve the model’s real-world usability and create more value for stakeholders.
+
+**12. Usage Instructions**
+
+  Clone the repository:
+  ```bash
+  git clone https://github.com/username/repo.git
+  cd repo
+  pip install -r requirements.txt
+
+  or open the notebook: Project_Predict_Delivery_Time.ipynb
