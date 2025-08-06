@@ -62,3 +62,46 @@ Late deliveries lead to customer dissatisfaction and increased logistics cost. B
   - `Warehouse_block`, `Mode_of_Shipment`, `Customer_care_calls`,
   - `Customer_rating`, `Cost_of_the_Product`, `Discount_offered`,
     `Weight_in_gms`, `Prior_purchase`,`product_Importance`,` Gender`,` Reached.on.Time_Y.N(target: 0 = on time, 1 = delayed)`
+
+**6. Exploratory Data Analysis Summary (EDA)**
+
+📊 Basic Information
+
+	•	✅ Clean Dataset: No missing or duplicate values.
+	•	⚠️ Target Imbalance: 60% delayed vs. 40% on-time deliveries.
+
+🔢 Numerical Insights:
+
+	•	Customer Care Calls: Mostly 3–4 calls; no outliers or link to delivery time.
+	•	Customer Ratings: Evenly distributed from 1 to 5.
+	•	Product Cost: Most items range from $150–$270; peaks around $260.
+	•	Prior Purchases: Mostly between 2–5, showing moderate loyalty.
+	•	Discount Offered: Highly skewed; most under 10%, outliers up to 65%.
+	•	Weight in Grams: Bimodal; light (1000–2000g) and heavy (4000–5000g) products.
+
+📦 Boxplot vs Target Variable:
+
+	•	Higher Discounts → More Delays
+	•	Heavier Products → More On-Time Deliveries
+	•	Cost, Ratings, and Prior Purchases show little to no impact individually.
+
+🏷️ Categorical Feature Insights:
+
+	•	Warehouse Block F had the highest delay count.
+	•	Shipping by Ship experienced more delays vs. Flight or Road.
+	•	High Importance Products faced fewer delays.
+	•	Gender showed no meaningful difference in delay frequency.
+	•	High Discounts impacted delivery across all importance and customer types.
+
+🔁 Correlation Summary:
+
+	•	Strongest Delay Indicators:
+	•	+0.40 → Higher discounts = more delays
+	•	-0.27 → Heavier products = fewer delays
+	•	Weak Influence: Customer behavior, product importance, and shipment type (individually).
+
+📌 Final Notes:
+
+	•	Multivariate patterns (e.g., light products + ship + high discount) are more predictive than individual features.
+	•	EDA suggests that discount strategy and logistics optimization can significantly reduce delays.
+
