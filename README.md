@@ -64,36 +64,37 @@ Late deliveries lead to customer dissatisfaction and increased logistics cost. B
     `Weight_in_gms`, `Prior_purchase`,`product_Importance`,` Gender`,` Reached.on.Time_Y.N(target: 0 = on time, 1 = delayed)`
 - Libraries Used:
  
-1. Data Manipulation
-   
-import pandas as pd
-import numpy as np
-
-2. Visualization
-   
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-3. Preprocessing
-   
-from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn.model_selection import train_test_split
-
-4.  Models
-   
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from xgboost import XGBClassifier
-
-5.  Evaluation
-   
-from sklearn.metrics import (
-    accuracy_score, precision_score, recall_score, f1_score,
-    classification_report, confusion_matrix, roc_auc_score, roc_curve
-)
+	1. Data Manipulation
+	   
+	import pandas as pd, import numpy as np
+	
+	2. Visualization
+	   
+	import matplotlib.pyplot as plt, import seaborn as sns
+	
+	3. Preprocessing
+	   
+	from sklearn.preprocessing import LabelEncoder, StandardScaler
+	
+	from sklearn.model_selection import train_test_split
+	
+	4.  Models
+	   
+	from sklearn.linear_model import LogisticRegression
+	
+	from sklearn.svm import SVC
+	
+	from sklearn.tree import DecisionTreeClassifier
+	
+	from sklearn.ensemble import RandomForestClassifier
+	
+	from sklearn.neighbors import KNeighborsClassifier
+	
+	from xgboost import XGBClassifier
+	
+	5.  Evaluation
+	   
+	from sklearn.metrics import (accuracy_score, precision_score, recall_score, f1_score, classification_report, confusion_matrix, roc_auc_score, roc_curve )
 
 **6. Exploratory Data Analysis Summary (EDA)**
 
