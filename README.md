@@ -62,6 +62,7 @@ Late deliveries lead to customer dissatisfaction and increased logistics cost. B
   - `Warehouse_block`, `Mode_of_Shipment`, `Customer_care_calls`,
   - `Customer_rating`, `Cost_of_the_Product`, `Discount_offered`,
     `Weight_in_gms`, `Prior_purchase`,`product_Importance`,` Gender`,` Reached.on.Time_Y.N(target: 0 = on time, 1 = delayed)`
+    
 - **Libraries Used:**
  
 	**1. Data Manipulation**
@@ -222,10 +223,40 @@ These enhancements can improve the model’s real-world usability and create mor
 
 **12. Usage Instructions**
 
-  Clone the repository:
-  ```bash
-  git clone https://github.com/username/repo.git
-  cd repo
-  pip install -r requirements.txt
+  1. Open in Google Colab
 
-  or open the notebook: Project_Predict_Delivery_Time.ipynb
+You can run this project directly in Google Colab without any local setup.
+Project_Predict_Delivery_Time.ipynb (Google Colab file)
+
+ 2. Load Dataset
+
+The dataset (e_commerce.csv) is already available in this repository.
+When running in Colab:
+from google.colab import drive
+drive.mount('/content/drive')
+
+# Or if reading directly from GitHub
+import pandas as pd
+url = "https://raw.githubusercontent.com/Thofa90/Project-Predicting-Product-Delivery-Time-for-an-Electronics-Store-E-Commerce/main/e_commerce.csv"
+df = pd.read_csv(url)
+df.head()
+
+3.	Install Required Libraries
+   
+   The necessary libraries are listed above in the Data Overview section.
+  	
+4.	Run All Cells
+5.	
+   Go to Runtime > Run all in Colab to execute the entire workflow.
+   This includes:
+	•	EDA (Exploratory Data Analysis)
+	•	Data Preprocessing
+	•	Model Training & Hyperparameter Tuning
+	•	Evaluation & Visualizations
+
+6.	View Results
+   
+	•	Model comparison tables
+	•	Feature importance plots
+	•	Confusion matrices
+	•	ROC curves
