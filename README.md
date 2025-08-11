@@ -227,7 +227,7 @@ These enhancements can improve the model’s real-world usability and create mor
 
 You can run this project directly in Google Colab without any local setup.
 
-🔗 **[Open in Colab]([(https://colab.research.google.com/drive/1x_XpPZS9bVLmvxKREl0izxC3fPonIAHJ#scrollTo=Kyv0zsioTS9q)])
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1x_XpPZS9bVLmvxKREl0izxC3fPonIAHJ#scrollTo=Kyv0zsioTS9q)
 
  2. Load Dataset
 
