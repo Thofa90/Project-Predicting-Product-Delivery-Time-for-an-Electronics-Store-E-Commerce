@@ -252,7 +252,7 @@ df.head()
    
    The necessary libraries are listed above in the Dataset Overview section.
   	
-*+4.**	Run All Cells
+**4.**	Run All Cells
 	
    Go to Runtime > Run all in Colab to execute the entire workflow.
    This includes:
