@@ -223,13 +223,13 @@ These enhancements can improve the model’s real-world usability and create mor
 
 **12. Usage Instructions**
 
-  1. Open in Google Colab
+  **1.** Open in Google Colab
 
 You can run this project directly in Google Colab without any local setup.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1x_XpPZS9bVLmvxKREl0izxC3fPonIAHJ#scrollTo=Kyv0zsioTS9q)
 
- 2. Load Dataset
+ **2.** Load Dataset
 
 The dataset (e_commerce.csv) is already available in this repository.
 When running in Colab:
@@ -248,11 +248,11 @@ df = pd.read_csv(url)
 
 df.head()
 
-3.	Install Required Libraries
+**3.**	Install Required Libraries
    
    The necessary libraries are listed above in the Dataset Overview section.
   	
-4.	Run All Cells
+*+4.**	Run All Cells
 	
    Go to Runtime > Run all in Colab to execute the entire workflow.
    This includes:
@@ -261,7 +261,7 @@ df.head()
 	•	Model Training & Hyperparameter Tuning
 	•	Evaluation & Visualizations
 
-5.	View Results
+**5.**	View Results
    
 	•	Model comparison tables
 	•	Feature importance plots
